@@ -10,24 +10,32 @@ public class Main {
 	// write your code here
         Methods method = Methods.getInstance();
 
-        Student student1 = AddStudent.AddStudent("1111","Tom","12/12/12");
-        Student student2 = AddStudent.AddStudent("2222","terry","14/14/12");
-        Student student3 = AddStudent.AddStudent("3333","Terry","15/15/15");
-        student1.addStudent(student1);
-        student1.addStudent(student2);
-        student1.addStudent(student3);
-
-        Course course1 = AddCourse.AddCourse("COSC1111", "Technology",12);
-        Course course2 = AddCourse.AddCourse("COSC2222","Business",12);
-        course1.addCourse(course1);
-        course1.addCourse(course2);
-
-
-        for(Student s: student1.getStudentsList()){
-            System.out.println(s.getStudentid().toString());
+       List<Course> courseList = new ArrayList<>();
+        Course c1 = new Course("COSC1111", "Technology",12);
+        Course c2 = new Course("COSC2222","Business",12);
+        courseList.add(c1);
+        courseList.add(c2);
+        List<Course> clist = new ArrayList<>();
+        HashSet<Course> HashSet = new HashSet(courseList);
+        for(Course course: HashSet) {
+            System.out.println(course.toString());
+            clist.add(course);
         }
-        for (Course c: course1.getCourseList()){
-            System.out.println(c.toString());
+
+        List<Student> studentList = new ArrayList<>();
+        Student st1 = new Student("1111","Tom","12/12/12");
+        Student st2 = new Student("2222","Timo","15/1/15");
+        Student st3 = new Student("3333","Terry","15/15/15");
+        Student st4 = new Student("3333","Terry","15/15/15");
+        studentList.add(st1);
+        studentList.add(st2);
+        studentList.add(st3);
+        studentList.add(st4);
+        List<Student> stlist = new ArrayList<>();
+        HashSet<Student> hashSet = new HashSet(studentList);
+        for(Student student : hashSet) {
+            System.out.println(student.toString());
+            stlist.add(student);
         }
         boolean exit = false;
         while(!exit) {
