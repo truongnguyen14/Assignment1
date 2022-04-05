@@ -27,7 +27,7 @@ public class Print {
             }
         }
         if(!op1){
-            System.out.println("Can't find your course or semester");
+            System.out.println("Can't find your student or semester");
         }else{
         ultilities.SaveCSV("Getallcourse.csv", allcourse);
         }
@@ -47,7 +47,7 @@ public class Print {
             }
             }
         if(!op2){
-            System.out.println("Can't find your student or semester");
+            System.out.println("Can't find your course or semester");
         }else {
             ultilities.SaveCSV("Getallstudent.csv", allstudent);
         }
