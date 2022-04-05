@@ -6,7 +6,7 @@ public class Methods implements StudentEnrollmentManager {
     private final List<StudentEnrollment>studentEnrollmentList = new ArrayList<>();
     private static final Methods intsance = new Methods();
     private final Utilities utilities = new Utilities();
-    private Checkduplicated checkduplicated = new Checkduplicated();
+    private final Checkduplicated checkduplicated = new Checkduplicated();
     public Methods() {
 
         super();
