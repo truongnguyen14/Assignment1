@@ -29,8 +29,8 @@ public class Main {
         List<Student> stlist = new ArrayList<>(students);
         HashSet<Course> courses = new HashSet(courseList);
         List<Course> clist = new ArrayList<>(courses);
-        studentList.addAll(Default.defstlist);      // add default student list in default class to studentList
-        courseList.addAll(Default.defclist);        // add default course list in default class to courseList
+        stlist.addAll(Default.defstlist);      // add default student list in default class to studentList
+        clist.addAll(Default.defclist);        // add default course list in default class to courseList
 
         boolean exit = false;
         while(!exit) {      // main menu
